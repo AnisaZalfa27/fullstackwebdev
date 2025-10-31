@@ -1,37 +1,5 @@
 import { useState } from "react";
-import initialBooks from "../utils/bookApa yang dimaksud dengan access modifier dalam OOP?
-Question 2Answer
-
-a.
-Menentukan fungsi
-
-b.
-Menentukan visibilitas atau aksesibilitas dari properti dan metode
-
-c.
-Menentukan struktur kendali
-
-d.
-Menentukan tipe data
-
-e.
-Menentukan variabelApa yang dimaksud dengan access modifier private?
-Question 3Answer
-
-a.
-Hanya dapat diakses dari dalam kelas
-
-b.
-Tidak dapat diakses sama sekali
-
-c.
-Dapat diakses dari mana saja
-
-d.
-Hanya dapat diakses dari dalam metode
-
-e.
-Dapat diakses dari kelas turunan";
+import initialBooks from "../utils/book";
 
 function BookList() {
   const [books, setBooks] = useState(initialBooks);

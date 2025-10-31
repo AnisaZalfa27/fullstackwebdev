@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Book from "./pages/Book";
+import GenreEdit from "./pages/Genreedit";
+import GenreList from "./pages/Genrelist";
+
 
 function App() {
   return (
@@ -13,6 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/books" element={<Book />} />
+        <Route path="/genre/list/:id" element={<GenreList />} />
+        <Route path="/genre/edit/:id" element={<GenreEdit />} />
       </Routes>
     </Router>
   );
