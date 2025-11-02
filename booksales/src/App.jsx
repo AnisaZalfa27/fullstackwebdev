@@ -20,9 +20,17 @@ function App() {
         <Route path="/genre/list/:id" element={<GenreList />} />
         <Route path="/genre/edit/:id" element={<GenreEdit />} />
          <Route path="/register" element={<Register />} />
+
       </Routes>
     </Router>
   );
 }
-
+ <Route
+          path="/admin"
+          element={
+            <ProtectedRoute allowedRoles={["admin"]}>
+              <AdminDashboard />
+            </ProtectedRoute>
+          }
+        />
 export default App;
