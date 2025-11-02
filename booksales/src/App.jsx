@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Book from "./pages/Book";
 import GenreEdit from "./pages/Genreedit";
 import GenreList from "./pages/Genrelist";
+import Register from "./pages/Register";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/books" element={<Book />} />
         <Route path="/genre/list/:id" element={<GenreList />} />
         <Route path="/genre/edit/:id" element={<GenreEdit />} />
+         <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );
